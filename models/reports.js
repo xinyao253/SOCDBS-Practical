@@ -23,9 +23,21 @@ module.exports.calculateStudentsGPA = function calculateStudentsGPA() {
         });
 };
 
+// module.exports.generateAttendance = function generateAttendance() {
+//     // TODO: Fix this sql query to invoke the corresponding database function/procedure 
+//     const sql = '';
+//     return query(sql)
+//         .then(function (result) {
+//             const rows = result.rows;
+//             return rows;
+//         })
+//         .catch(function (error) {
+//             throw error;
+//         });
+// };
 module.exports.generateAttendance = function generateAttendance() {
-    // TODO: Fix this sql query to invoke the corresponding database function/procedure 
-    const sql = '';
+    // Replace 'get_module_attendance' with the actual function name in your DB
+    const sql = 'SELECT * FROM get_module_attendance()';
     return query(sql)
         .then(function (result) {
             const rows = result.rows;
